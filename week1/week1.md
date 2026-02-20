@@ -1,36 +1,43 @@
+# Portfolio de Compétences - Semaine 1 (W1)
+**Projet :** Duckify (Simulation d'entreprise) 
+**Date :** 20 Février 2026 
 
+---
 
-- On Tuesday we had a discussion with the whole group,the teachers(during a meeting) and specifically with my partner for the GenAi & LLM Part
+## 1. Rapport Hebdomadaire 
 
-- I have communicated clearly with all the parts, and we have successfully defined realistic Milestones for the end of week 1
-- I have discussed about my part (GenAi & LLM) and together we have successfully determined what task we need to do until friday morning
+### Actions clés & Résultats
+- **Cadrage stratégique :** Définition des jalons (milestones) réalistes pour la W1 suite aux discussions avec les enseignants et l'équipe.
+- **Scribe & Coordination :** Prise de notes des directives et des tenants et aboutissants lors de la réunion de coordination du groupe LLM-DESIGN.y
+- **Conception LLM :** Création et gestion du backlog technique sur JIRA pour la partie "LLM-Design".
+- **Recherche technique :** Exploration et tests de modèles génératifs pour la création de textures à partir de prompts personnalisés.
+- **Communication leadership :** Présentation des recherches et de la solution LLM retenue au Product Owner (PO) et au CTO.
 
+### Artifacts (Preuves)
+- **Coordination & Directives :** [Notes de réunion LLM-DESIGN](https://typst.app/project/rPwzKQzkUmewemsmOPV4ke)
+- **Planification :** [Presentation Brainstorming (p. 7-8)](./data/Brainstorming-3.pdf)
+- **Suivi de projet :** Screenshot JIRA (data/jira-tasks.png)
+- **Recherche technique :** [Document llm-research.typ](https://typst.app/project/rVAS0WHLmFP2e3ResWqTdV)
+- **Présentation PO/CTO :** [Friday Meeting Slides (9-14 & 26)](https://hessoit-my.sharepoint.com/...)
+- **Suivi quotidien :** [Daily Meeting Notes](https://typst.app/project/roWPq3UVmcXvuuZUvlFFKM)
 
+---
 
-[Presentation](./data/Brainstorming-3.pdf) - go to page 7 and 8
+## 2. Justification des Compétences 
 
-- During the whole week i have created and completed the tasks on JIRA for my part of developpment which is LLM-Design
+| Compétence ciblée | Action & Justification | Preuve |
+| :--- | :--- | :--- |
+| **Communiquer clairement**  | Rôle de scribe : documentation des directives et enjeux pour assurer l'alignement de l'équipe LLM-DESIGN. | Notes Typst |
+| **Analyser un problème complexe**  | Identification des opportunités et contraintes liées à la génération de textures par LLM. | llm-research.typ |
+| **Posture pro facilitante**  | Participation proactive aux réalisations techniques et partage transparent des points de blocage. | Daily Notes |
+| **Argumenter ses choix** | Présentation et justification des choix technologiques face au CTO et au PO. | Slides Présentation |
 
-![JIRA TASKS](data/jira-tasks.png)
+---
 
+## 3. Auto-réflexion
+- **Ce qui a fonctionné :** La reparition des taches dans mon groupe a fait qu'on a pu travailler efficacement à la recherche de solution AI
+- **Réussite :** Nous avons trouvé une solution qui propose des résultats d'une qualité assez bonne pour investiguer (napoleon)
 
+---
 
-- During Wednesday to Friday , i have done some research and have tried multiple solutions/model that generates textures from a custom prompt 
-
-- On Friday i presented my research of an LLM solution to the whole group including the PO and the CTO
-
-- we also discussed about the futures milestones for the next week and if the milestones of this week has been completed
-
-[Friday CTO & CO Presentation](https://hessoit-my.sharepoint.com/:p:/r/personal/pierreyv_savioz_hes-so_ch/Documents/Duckify%20Meeting%20Week%201.pptx?d=wb9c1346635a949549246862be85923af&csf=1&web=1&e=xdo2TI) (my slides : 9 to 14 and 26)
-
-[document "llm-research.typ"](https://typst.app/project/rVAS0WHLmFP2e3ResWqTdV)
-
-
-
-
-
-- During the whole week , i have done daily meetings and have successfully shared about my problems for my part and how the tasks that i was doing are going well or not
-
-
-[Daily meetings notes](https://typst.app/project/roWPq3UVmcXvuuZUvlFFKM) 
-
+## 4. Hiring Process Q&A (3 Questions) 
