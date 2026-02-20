@@ -11,14 +11,26 @@
 
 - During the whole week i have created and completed the tasks on JIRA for my part of developpment which is LLM-Design
 
-![JIRA TASKS](image.png)
+![JIRA TASKS](data/jira-tasks.png)
 
 
 
 - During Wednesday to Friday , i have done some research and have tried multiple solutions/model that generates textures from a custom prompt 
 
-[tdocument "llm-research.typ"](https://typst.app/project/rVAS0WHLmFP2e3ResWqTdV)
+- On Friday i presented my research of an LLM solution to the whole group including the PO and the CTO
+
+- we also discussed about the futures milestones for the next week and if the milestones of this week has been completed
+
+[Friday CTO & CO Presentation](https://hessoit-my.sharepoint.com/:p:/r/personal/pierreyv_savioz_hes-so_ch/Documents/Duckify%20Meeting%20Week%201.pptx?d=wb9c1346635a949549246862be85923af&csf=1&web=1&e=xdo2TI) (my slides : 9 to 14 and 26)
+
+[document "llm-research.typ"](https://typst.app/project/rVAS0WHLmFP2e3ResWqTdV)
+
+
+
+
 
 - During the whole week , i have done daily meetings and have successfully shared about my problems for my part and how the tasks that i was doing are going well or not
 
+
 [Daily meetings notes](https://typst.app/project/roWPq3UVmcXvuuZUvlFFKM) 
+
