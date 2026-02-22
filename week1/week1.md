@@ -19,7 +19,7 @@
 - **Suivi de projet :** Screenshot JIRA (data/jira-tasks.png)
 - **Recherche technique :** [Document llm-research.typ](./data/llm-design-research.pdf)
 - **Présentation PO/CTO :** [Friday Meeting Slides (9-14 & 26)](./data/Duckify%20Meeting%20Week%201.pptx)
-- **Suivi quotidien :** [Daily Meeting Notes](./data/Daily%20Meetings.pdf)
+- **Suivi quotidien :** [Daily Meeting Notes 18.02.2026](./data/Daily%20Meetings-1.pdf) | [Daily Meeting Notes 19.02.2026](./data/Daily%20Meetings-2.pdf) | [Daily Meeting Notes 20.02.2026](./data/Daily%20Meetings-3.pdf)
 
 ---
 
@@ -29,7 +29,7 @@
 | :--- | :--- | :--- |
 | **Communiquer clairement**  | Rôle de scribe : documentation des directives et enjeux pour assurer l'alignement de l'équipe LLM-DESIGN. | [Notes de réunion LLM-DESIGN](./data/Coordination%20GenAI.pdf) |
 | **Analyser un problème complexe**  | Identification des opportunités et contraintes liées à la génération de textures par LLM. | [Document llm-research.typ](./data/llm-design-research.pdf) |
-| **Posture pro facilitante**  | Participation proactive aux réalisations techniques et partage transparent des points de blocage. | [Daily Meeting Notes](./data/Daily%20Meetings.pdf) |
+| **Posture pro facilitante**  | Participation proactive aux réalisations techniques et partage transparent des points de blocage. | [Daily Meeting Notes 18.02.2026](./data/Daily%20Meetings-1.pdf) - [Daily Meeting Notes 19.02.2026](./data/Daily%20Meetings-2.pdf) -[Daily Meeting Notes 20.02.2026](./data/Daily%20Meetings-3.pdf) |
 | **Argumenter ses choix** | Présentation et justification des choix technologiques face au CTO et au PO. | [Friday Meeting Slides (9-14 & 26)](./data/Duckify%20Meeting%20Week%201.pptx) |
 
 ---
