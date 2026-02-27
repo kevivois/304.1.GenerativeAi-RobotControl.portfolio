@@ -58,11 +58,4 @@
 
 ## 4. Hiring Process Q&A (3 Questions) 
 
-**1. "Comment avez-vous structuré votre approche pour tester 8 solutions IA différentes sans perdre de temps ?"**
-- Réponse : J'ai créé un document de documentation centralisé listant critères d'évaluation (performance, reproductibilité, coût computationnel, facilité d'intégration). Chaque solution a été testée selon ces critères standardisés, permettant une comparaison rapide et objective malgré les difficultés d'environnement.
 
-**2. "Pourquoi avoir développé une pipeline utilisant SSH + Docker plutôt qu'une solution plus simple ?"**
-- Réponse : L'architecture SSH + Docker offre plusieurs avantages : (1) isolation de l'environnement IA, (2) exécution fiable sur un serveur distant sans dépendre des configurations locales, (3) scalabilité et possibilité ultérieure d'utiliser les clusters Chacha/Disco, (4) reproductibilité pour l'équipe complète.
-
-**3. "Comment avez-vous géré la courbe d'apprentissage sur SLURM et les clusters Chacha/Disco ?"**
-- Réponse : En priorisant la prise en main immédiate pour ne pas bloquer l'avancée du projet. J'ai commencé par des tâches simples (consultation de statuts, soumission de jobs basiques) et prévois de consolider cette maîtrise en W3 en créant des scripts SLURM réutilisables pour l'équipe et en me basant sur la documentation officielle des clusters.
