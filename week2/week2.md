@@ -50,12 +50,20 @@
 
 ### 3.3 Ce que je changerai
 - **Priorité accrue sur la documentation des bloques :** Documenter plus précisément les erreurs de reproductibilité pour les transmettre aux développeurs/chercheurs concernés.
-- **Préparer rapidement un script SLURM template :** Créer des exemples de code SLURM reproductibles pour Chacha/Disco plutôt que de compter sur l'apprentissage empirique.
 - **Valider l'intégration plus tôt :** Tester l'API SSH + Docker dès la W1 aurait pu identifier certains problèmes plus précocement.
 - **Structurer le testing en sprints :** Plutôt que de tester 8 solutions en vrac, les tester 2-3 par jour avec jalons clairs d'évaluation.
 
 ---
 
 ## 4. Hiring Process Q&A (3 Questions) 
+
+### Q1. Quelle a été ta principale contribution technique cette semaine ?
+**Réponse :** J’ai conçu et implémenté une pipeline complète pour exécuter la génération de textures IA via Calypso, en orchestrant le flux PC local → API SSH → Docker → exécution IA → résultats. Cette contribution a permis de valider une base d’intégration fiable pour l’équipe.
+
+### Q2. Quel obstacle majeur as-tu rencontré, et comment l’as-tu géré ?
+**Réponse :** Le principal obstacle a été la reproductibilité des solutions IA testées (dépendances obsolètes, conflits de packages, environnements instables). Je l’ai géré avec une approche méthodique : tests comparatifs de 8 solutions, documentation systématique des résultats et communication régulière des blocages en daily.
+
+### Q3. Quelles sont tes priorités pour la suite du projet ?
+**Réponse :** Mes priorités sont de consolider la reproductibilité (standardisation de l’environnement), approfondir l’utilisation de SLURM sur Chacha/Disco pour les charges lourdes et de tester des solutions seulement testable sur Chacha/Disco & les comparer de manière protocolaire et structurée
 
 
