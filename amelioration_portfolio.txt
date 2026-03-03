@@ -1,0 +1,4 @@
+- justifier clairement ou se situe la compétence (lié a l'artefact)
+- Un readme qui s'incrémente au fil des semaines plutot que plusieurs readme
+- S'assurer que les liens de fichiers / preuves soit justes et fonctionnels
+- S'assurer que l'artefact soit clair avec l'explication (ex: si l'artefact est une PR, spécifier / expliquer quel fichier)
