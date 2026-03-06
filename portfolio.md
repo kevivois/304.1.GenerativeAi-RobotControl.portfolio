@@ -1,5 +1,5 @@
 # Portfolio de Compétences - Projet Duckify
-**Période :** Février 2026 (Semaines 1 & 2)
+**Période :** Février/Mars 2026 (Semaines 1 à 3)
 **Rôle principal :** R&D IA Générative, Ingénierie de Pipeline & Coordination technique
 
 ---
@@ -21,58 +21,66 @@ Ce journal de bord retrace l'évolution de la recherche et de l'implémentation 
 - **Tests intensifs (Benchmarking) :** Évaluation exhaustive de 8 solutions IA distinctes, avec une documentation rigoureuse sur leur reproductibilité et leurs contraintes d'environnement.
 - **Mise à l'échelle (Infrastructure) :** Prise en main des clusters calculatoires haute performance (Chacha et Disco) et initiation au gestionnaire de jobs SLURM pour pallier les limites matérielles du serveur Calypso.
 - **Livrables W2 :**
-  - [Pull Request #36 - AI API Pipeline & Diagramme CI/CD](https://github.com/Toys-R-Us-Rex/Duckify/pull/36)
+  - [Pull Request #36 - AI API Pipeline](https://github.com/Toys-R-Us-Rex/Duckify/pull/36) : model.py (Docker), app.py (API locale), client.py (Connexion PC).
   - [Document AI Testing & Documentation](https://typst.app/project/r73B9i9BnakW76rGmJycGx)
   - [Daily Meeting Notes W1 & W2](https://typst.app/project/roWPq3UVmcXvuuZUvlFFKM)
+
+### Semaine 3 : Déploiement MV-Adapter, SLURM & Pivot Architectural
+- **Déploiement & Maîtrise SLURM :** Installation réussie de la solution MV-Adapter sur le cluster Disco. Résolution d'un problème complexe  de dépendances (environnement Conda, versions CUDA/C++) et maîtrise acquise du gestionnaire SLURM pour l'exécution des jobs GPU.
+- **Documentation & Tracking rigoureux :** Documentation détaillée des méthodes Text2Texture et Image2Texture. Création d'un outil de suivi centralisé (Excel) pour le Prompt Engineering, répertoriant chaque test, ses paramètres, résultats et conclusions.
+- **Pivot Architectural :** Décision stratégique d'abandonner l'inférence sur le serveur Calypso au profit exclusif du cluster Disco, suite aux limitations matérielles identifiées. Planification du refactoring de la Pull Request de l'API pour s'adapter à cette nouvelle infrastructure.
+- **Communication & Restitution :** Prise du rôle de scribe pour le Daily du 05.03.2026. Présentation complète des avancées et de la solution MV-Adapter au CTO et à l'équipe le vendredi, avec intégration active des feedbacks. Alignement total avec les retours des scribes sur les réunions de la semaine.
+- **Livrables W3 :**
+  - [Documentation AI Solution (+ MV-Adapter)](https://typst.app/project/r73B9i9BnakW76rGmJycGx)
+  - [Excel de Tracking - Tests Text2Texture](https://docs.google.com/spreadsheets/d/1NpckWJFnlC7U_zsNBi_d-7OBQRsPJaKOQ3xO2CpFwcs/edit?usp=sharing)
+  - [Notes de Daily Meeting (Scribe du 05.03) - PDF](./data/Daily%20Meetings_05.03.2026.pdf)
+  - [Rapport de Réunion CTO/Équipe - PDF](./data/Weekly-meeting%20-%2006.03.2026.pdf)
+  - [Slides de Présentation W3 (Slides 3, 5, 6, 10) - PPTX](https://hessoit-my.sharepoint.com/:p:/r/personal/nathan_antoniet_hes-so_ch/Documents/presentation-week-3.pptx?d=wd7dc986a100d49fb85e629c7f265e3d0&csf=1&web=1&e=6lrqrL)
 
 ---
 
 ## 2. Matrice des Compétences Validées
 
-| Compétence ciblée | Actions menées (W1 & W2) | Preuves |
+| Compétence ciblée | Actions menées (W1 à W3) | Preuves |
 | :--- | :--- | :--- |
-| **Analyser un problème complexe** | - W1 : Identification des contraintes liées à la génération de textures par LLM.<br>- W2 : Exploration systématique de 8 solutions IA et analyse des problèmes de reproductibilité des environnements. | [Recherche W1](./data/llm-design-research.pdf)<br>[Testing W2](https://typst.app/project/rVAS0WHLmFP2e3ResWqTdV) |
-| **Concevoir une solution architecturale** | - W2 : Développement d'une pipeline robuste et sécurisée (SSH, API locale, isolation Docker) pour l'inférence IA sur serveur distant. | [PR #36 - Architecture](https://github.com/Toys-R-Us-Rex/Duckify/pull/36) |
-| **Maîtriser les outils techniques** | - W2 : Intégration avancée de Docker, gestion des tunnels SSH, et initiation au calcul distribué via SLURM (Clusters Chacha/Disco). | [PR #36](https://github.com/Toys-R-Us-Rex/Duckify/pull/36) |
-| **Communiquer clairement** | - W1 : Rôle de scribe pour aligner l'équipe technique.<br>- W2 : Présentation structurée des tests aux coéquipiers et documentation rigoureuse des blocages en Daily Meetings. | [Notes de réunion](./data/Coordination%20GenAI.pdf)<br>[Daily Notes](https://typst.app/project/roWPq3UVmcXvuuZUvlFFKM) |
-| **Argumenter ses choix** | - W1 : Présentation et justification des choix technologiques (SDFusion écarté au profit de TEXTure) face au CTO et au PO. | [Slides W1](./data/Duckify%20Meeting%20Week%201.pptx) |
-| **Posture pro facilitante** | - Proactivité dans le partage des points de blocage.<br>- Organisation d'une réunion d'intégration (W2) pour valider la structure technique avec l'équipe. | Daily notes & [PR #36](https://github.com/Toys-R-Us-Rex/Duckify/pull/36) |
+| **Analyser un problème complexe** | - W2 : Analyse des problèmes de reproductibilité des environnements IA.<br>- W3 : Mise en place d'une matrice de tracking systématique (Excel) pour analyser finement l'impact du Prompt Engineering sur MV-Adapter. | [Testing W2/W3](https://typst.app/project/r73B9i9BnakW76rGmJycGx)<br>[Excel Tracking W3](https://docs.google.com/spreadsheets/...) |
+| **Concevoir une solution architecturale** | - W2 : Développement d'une pipeline robuste via API et SSH.<br>- W3 : Capacité à pivoter techniquement (abandon de Calypso pour Disco) pour garantir la scalabilité du système, impliquant un refactoring prévu. | [PR #36 - Architecture](https://github.com/Toys-R-Us-Rex/Duckify/pull/36) |
+| **Maîtriser les outils techniques** | - W2 : Intégration avancée de Docker et gestion des tunnels SSH.<br>- W3 : Maîtrise validée du calcul distribué via SLURM sur le cluster Disco et résolution de conflits complexes de compilation (C++/CUDA). | Documentation SLURM / [PR #36](https://github.com/Toys-R-Us-Rex/Duckify/pull/36) |
+| **Communiquer clairement** | - W1/W3 : Rôle de scribe assumé à plusieurs reprises pour aligner l'équipe technique.<br>- W3 : Présentation des avancées et réception proactive des feedbacks du CTO. | Notes de réunions<br>Slides de présentation |
+| **Argumenter ses choix** | - W1 : Justification des choix technologiques face au CTO.<br>- W3 : Argumentation du pivot d'infrastructure (Calypso vs Disco) basée sur des preuves empiriques et des tests de charge. | Slides W1 & W3 |
+| **Posture pro facilitante** | - Proactivité dans le partage des points de blocage et structuration d'outils collaboratifs (Excel partagé) pour que toute l'équipe puisse suivre les itérations IA. | [Excel Tracking W3](https://docs.google.com/spreadsheets/...) |
 
 ---
 
 ## 3. Auto-réflexion & Amélioration Continue
 
 ### 3.1 Ce qui fonctionne bien (Les succès)
-- **Vitesse d'exécution sur l'infrastructure :** L'architecture complexe (API SSH → Docker) a été mise en place plus rapidement que prévu, offrant une base fiable à l'équipe dès la Semaine 2.
-- **Approche méthodique de la R&D :** Le passage d'une recherche théorique (W1) à des tests systématiques sur 8 solutions (W2) a permis de cartographier précisément l'état de l'art technique.
-- **Proactivité face aux blocages matériels :** L'identification rapide du manque de RAM sur le serveur Calypso m'a poussé à migrer vers les clusters Chacha/Disco via SLURM de manière anticipée.
+- **Maîtrise de la nouvelle infrastructure :** La courbe d'apprentissage sur SLURM a été franchie avec succès en W3. L'installation de MV-Adapter sur Disco prouve ma capacité à dompter des environnements serveurs complexes.
+- **Rigueur scientifique dans les tests :** La création du fichier Excel de tracking permet enfin de sortir de l'empirisme. Chaque modification de paramètre ou de prompt est documentée, justifiée et analysée, ce qui accélère grandement la prise de décision.
+- **Agilité architecturale :** Avoir le pragmatisme de stopper l'intégration sur Calypso pour refactoriser la pipeline vers Disco démontre une bonne capacité d'adaptation face aux réalités matérielles.
 
 ### 3.2 Ce qui a posé problème (Les défis)
-- **L'enfer des dépendances (Reproductibilité) :** La majorité des solutions open-source testées (ex: Text2Tex) souffrent d'environnements obsolètes (Python 3.8/3.9, conflits Conda, dépendances PyTorch/Kaolin cassées).
-- **Limites des modèles actuels :** Le modèle TEXTure produit encore des hallucinations et des artefacts visuels indésirables sur le mesh du canard.
-- **Courbe d'apprentissage SLURM :** Bien que l'accès aux clusters soit acquis, la maîtrise totale des scripts SLURM pour lancer les environnements Conda et les jobs GPU reste complexe.
+- **Le "Dependency Hell" sur Disco :** La mise en place de MV-Adapter a été très chronophage à cause des conflits de librairies (compilation C++, versions PyTorch, incompatibilités de tenseurs).
+- **Le coût du refactoring :** Le changement de serveur (Calypso → Disco) rend obsolète une partie du travail de la PR #36 de la Semaine 2, imposant une charge de travail imprévue pour adapter le code.
+- **La reunion avec le CTO du vendredi 06.03.2026** : Le CTO nous pousse à faire une décision sur quel méthode AI utiliser avant la fin de semaine 4, cette décision aura beaucoup d'impact sur la suite du projet et donc se doit d'etre investie pleinement durant la semaine 4
 
 ### 3.3 Plan d'action & Ajustements pour la suite
-1. **Structurer les tests en Sprints :** Au lieu de tester 8 solutions de front, isoler 2 à 3 solutions par jour avec des protocoles stricts de comparaison.
-2. **Prioriser la standardisation :** Documenter très précisément les erreurs de reproductibilité pour isoler des environnements Docker/Conda viables sur le long terme.
-3. **Optimiser les résultats existants :** Avant de chercher de nouveaux frameworks, faire du *Prompt Engineering* approfondi sur TEXTure pour tenter de réduire les artefacts.
-4. **Focus SLURM :** Déployer mes scripts de test de manière protocolaire exclusivement sur Chacha/Disco pour les modèles lourds.
+1. **Refactoring de la Pipeline :** Mettre à jour en priorité le code de la PR pour que l'API et le client communiquent de manière fluide et sécurisée avec le cluster Disco.
+2. **Choix final de l'algorithme :** Utiliser les données du fichier Excel de tracking et de mon collègue (M.Caporizzi) pour trancher définitivement, lors de la W4, entre la méthode *Text2Texture* et *Image2Texture* de MV-Adapter.
+3. **Optimisation des résultats :** Poursuivre le prompt engineering strict pour éradiquer les dernières hallucinations visuelles (visages dupliqués, etc.) sur les meshes.
 
 ---
 
 ## 4. Hiring Process Q&A (Préparation aux entretiens)
 
 **Q1. Quelle a été ta principale contribution technique jusqu'à présent ?**
-*Réponse :* J’ai conçu et implémenté une pipeline complète pour automatiser la génération de textures IA. J'ai orchestré le flux sécurisé depuis un PC local vers une API via SSH sur un serveur distant, qui déclenche ensuite un conteneur Docker exécutant le modèle IA, avant de renvoyer le résultat 3D prêt à l'emploi.
+*Réponse :* J’ai conçu et implémenté une pipeline complète pour automatiser la génération de textures IA. J'ai orchestré le flux sécurisé depuis un PC local vers une API, en gérant dynamiquement la migration de notre infrastructure d'un serveur limité (Calypso) vers un cluster de calcul haute performance (Disco) via SLURM & La mise en place de la solution MV-Adapter fonctionnelle & executable sur Disco avec SLURM.
 
-**Q2. Pourquoi avoir écarté certaines solutions IA d'apparence performantes comme SDFusion ou Text2Tex ?**
-*Réponse :* Chaque rejet était motivé par une contrainte business ou technique stricte. SDFusion a été écarté car il altère la géométrie originale du mesh, ce qui est incompatible avec nos contraintes d'impression 3D et de robotique. Text2Tex a été écarté car son environnement Conda était obsolète, entraînant des conflits insolubles de dépendances, ce qui nuit à la reproductibilité et à la mise en production.
+**Q2. Comment as-tu géré la complexité des tests IA pour éviter de tourner en rond ?**
+*Réponse :* Devant la multitude de paramètres et de prompts possibles avec MV-Adapter, j'ai mis en place un outil de tracking centralisé (Google Sheets). Chaque itération y est répertoriée avec ses inputs (prompt, seed, paramètres), ses outputs visuels, et une conclusion claire. Cela a transformé des tests hasardeux en un véritable protocole scientifique, facilitant le choix de la méthode finale.
 
-**Q3. Quel est l'intérêt d'avoir pris le rôle de scribe lors du lancement technique ?**
-*Réponse :* Dans un projet complexe, cela permet de figer les directives et les contraintes matérielles immédiatement. Cela garantit que chaque membre de l'équipe part avec une vision identique des "tenants et aboutissants", évitant ainsi le travail redondant ou hors-sujet.
+**Q3. As-tu déjà eu à jeter du code ou revoir ton architecture en cours de route ? Comment as-tu réagi ?**
+*Réponse :* Absolument, lors de la Semaine 3. J'avais codé une API fonctionnelle pour le serveur Calypso en Semaine 2. Cependant, face aux limites matérielles (RAM) de Calypso identifiées lors de mes tests de charge, j'ai pris la décision d'abandonner cette voie. J'ai assumé de devoir refactoriser ma Pull Request pour adapter la pipeline au cluster Disco. Il vaut mieux refactoriser tôt que de maintenir une architecture techniquement condamnée.
 
 **Q4. Quel obstacle majeur as-tu rencontré cette semaine, et comment l’as-tu géré ?**
-*Réponse :* Le principal obstacle a été l'instabilité (Dependency Hell) des dépôts open-source testés. J'ai géré cela avec une approche très méthodique : création d'environnements Conda isolés ou de conteneurs Docker, tests comparatifs documentés, et dans certains cas, intervention directe dans le code source pour forcer la rétrocompatibilité des librairies.
-
-**Q5. Comment avez-vous résolu les problèmes de RAM (OOM) lors de vos tests ?**
-*Réponse :* J'ai rapidement identifié que le serveur initial (Calypso) était un goulot d'étranglement matériel. J'ai donc été proactif en demandant les accès aux clusters de calcul haute performance (Chacha/Disco) et j'ai commencé à adapter mes pipelines pour qu'elles tournent via le gestionnaire de tâches SLURM.
+*Réponse :* L'installation de MV-Adapter sur le cluster a été un véritable "Dependency Hell" (conflits CUDA, erreurs de Linker C++). J'ai géré cela de manière chirurgicale : forçage des variables d'environnement des compilateurs Conda et création de liens symboliques pour guider le cluster, le tout automatisé dans un script SLURM pour garantir la reproductibilité.
