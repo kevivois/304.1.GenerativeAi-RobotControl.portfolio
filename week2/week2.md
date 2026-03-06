@@ -15,7 +15,7 @@
 - **Apprentissage infrastructure :** Prise en main des clusters Chacha et Disco à partir de mercredi/jeudi, initiation à l'utilisation de SLURM.
 
 ### Artifacts (Preuves)
-- **Documentation des solutions testées :** [Document AI Testing & Documentation](https://typst.app/project/rVAS0WHLmFP2e3ResWqTdV)
+- **Documentation des solutions testées :** [Document AI Testing & Documentation](https://typst.app/project/r73B9i9BnakW76rGmJycGx)
 - **Daily Meeting Notes :** [Réunions quotidiennes W2](https://typst.app/project/roWPq3UVmcXvuuZUvlFFKM) (participation sauf mardi)
 - **Pipeline d'intégration :** [Pull Request #36 - AI API Pipeline](https://github.com/Toys-R-Us-Rex/Duckify/pull/36)
 - **Réunion d'intégration mercredi :** Documentation interne via la PR (commentaires et discussions)
