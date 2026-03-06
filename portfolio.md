@@ -1,6 +1,5 @@
 # Portfolio de Compétences - Projet Duckify
 **Période :** Février/Mars 2026 (Semaines 1 à 3)
-**Rôle principal :** R&D IA Générative, Ingénierie de Pipeline & Coordination technique
 
 ---
 
@@ -23,7 +22,7 @@ Ce journal de bord retrace l'évolution de la recherche et de l'implémentation 
 - **Livrables W2 :**
   - [Pull Request #36 - AI API Pipeline](https://github.com/Toys-R-Us-Rex/Duckify/pull/36) : model.py (Docker), app.py (API locale), client.py (Connexion PC).
   - [Document AI Testing & Documentation](https://typst.app/project/r73B9i9BnakW76rGmJycGx)
-  - [Daily Meeting Notes W1 & W2](https://typst.app/project/roWPq3UVmcXvuuZUvlFFKM)
+  - [Daily Meeting Notes W1 & W2 (Lien TYPST : Naviguez dans le dossier typst afin de trouver toutes les notes)](https://typst.app/project/roWPq3UVmcXvuuZUvlFFKM)
 
 ### Semaine 3 : Déploiement MV-Adapter, SLURM & Pivot Architectural
 - **Déploiement & Maîtrise SLURM :** Installation réussie de la solution MV-Adapter sur le cluster Disco. Résolution d'un problème complexe  de dépendances (environnement Conda, versions CUDA/C++) et maîtrise acquise du gestionnaire SLURM pour l'exécution des jobs GPU.
