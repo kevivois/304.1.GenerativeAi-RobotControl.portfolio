@@ -1,52 +1,73 @@
-# Portfolio - Kevin Voisin
+﻿# Portfolio - Kevin Voisin
 
-Ce portfolio est reformulé pour que chaque ligne montre direct la compétence + la preuve + pourquoi la preuve est valide.
+# Compétences
+
+Ensemble des démonstrations structurées par domaine de compétence selon le référentiel 304.
+
+## Ingénierie informatique
 
 # Analyser un problème informatique complexe
-- J’ai découpé le problème GenAI en parties concrètes (qualité visuelle, infra GPU/SSH/SLURM, stabilité des dépendances). **Preuve :** [Rapport GenAI Pipeline - Réflexion & Architecture](https://typst.app/project/r88Ho8oDHaBiIYa7MDoBL4). **Pourquoi ça prouve :** ce document montre noir sur blanc les contraintes à résoudre et relie chaque contrainte à un choix technique, donc il prouve une vraie analyse de problème complexe.
-- J’ai comparé plusieurs solutions (TEXTure, Paint-it, Text2Tex, SDFusion, MV-Adapter) avec leurs limites réelles. **Preuve :** [llm-design-research.pdf](./data/llm-design-research.pdf). **Pourquoi ça prouve :** ce fichier présente plusieurs options avec avantages, limites et conditions d’usage, ce qui démontre que la décision finale vient d’une comparaison structurée.
-- J’ai analysé l’impact du module FreeU sur MV-Adapter Text2Texture (avec FreeU vs sans FreeU). **Preuve :** [Rapport comparatif FreeU / sans FreeU](https://typst.app/project/rSFXN1Spr2ZphkfMR5s9yk). **Pourquoi ça prouve :** le rapport met les résultats côte à côte avec les mêmes conditions de test, puis explique les différences observées, donc il valide une analyse basée sur des observations vérifiables.
+
+- J’ai analysé la problématique GenAI en détaillant ses composantes avec une granularité adaptée (qualité visuelle, robustesse SSH/Flask/SLURM, contraintes GPU, dépendances), comme le montre le [Rapport GenAI Pipeline - Réflexion & Architecture](https://typst.app/project/r88Ho8oDHaBiIYa7MDoBL4), où les contraintes et leurs interactions sont explicitées.
+- J’ai identifié les opportunités techniques en comparant de manière structurée plusieurs solutions (TEXTure, Paint-it, Text2Tex, SDFusion, MV-Adapter) dans [llm-design-research.pdf](./data/llm-design-research.pdf), avec des critères et compromis formalisés.
+- J’ai analysé une contrainte précise en évaluant l’impact de FreeU à protocole constant dans le [Rapport comparatif FreeU / sans FreeU](https://typst.app/project/rSFXN1Spr2ZphkfMR5s9yk), ce qui isole la variable testée et renforce la validité de l’analyse.
 
 # Concevoir une solution théorique modélisée
-- J’ai conçu une architecture en flux complet (client local → SSH/API Flask → job SLURM sur Disco → retour `.glb`). **Preuve :** [Rapport GenAI Pipeline - Réflexion & Architecture](https://typst.app/project/r88Ho8oDHaBiIYa7MDoBL4). **Pourquoi ça prouve :** on y trouve la description des composants, de leurs rôles et des échanges entre eux, ce qui correspond exactement à une modélisation théorique complète.
-- J’ai fait évoluer le modèle de Calypso vers Disco après observation des limites matérielles. **Preuve :** [PR #36 - AI API Pipeline (Calypso)](https://github.com/Toys-R-Us-Rex/Duckify/pull/36) puis [PR #79 - GenAI Pipeline Integration Disco](https://github.com/Toys-R-Us-Rex/Duckify/pull/79). **Pourquoi ça prouve :** la première PR montre l’architecture initiale, la seconde montre l’architecture adaptée aux contraintes réelles, donc la preuve documente bien une conception révisée et argumentée.
+
+- J’ai conçu une architecture de pipeline complète (client local, SSH/API Flask, SLURM sur Disco, retour .glb) dans le [Rapport GenAI Pipeline - Réflexion & Architecture](https://typst.app/project/r88Ho8oDHaBiIYa7MDoBL4), en modélisant de manière logique et justifiée les composants, interfaces et flux.
+- J’ai fait évoluer le modèle initial de Calypso vers Disco entre [PR #36 - AI API Pipeline (Calypso)](https://github.com/Toys-R-Us-Rex/Duckify/pull/36) et [PR #79 - GenAI Pipeline Integration Disco](https://github.com/Toys-R-Us-Rex/Duckify/pull/79), ce qui montre une conception théorique révisée pour satisfaire les contraintes d’un problème pluridisciplinaire et de son contexte.
 
 # Implémenter une approche théorique modélisée
-- J’ai implémenté le client SSH, le serveur Flask et le script SLURM pour exécuter l’inférence sur GPU A100. **Preuve :** [PR #79 - GenAI Pipeline Integration Disco](https://github.com/Toys-R-Us-Rex/Duckify/pull/79). **Pourquoi ça prouve :** cette PR contient les fichiers d’exécution réels du pipeline, donc elle démontre que la solution n’est pas seulement décrite mais bien implémentée.
-- J’ai livré une première version fonctionnelle avant refactoring (pour apprendre vite puis améliorer). **Preuve :** [PR #36 - AI API Pipeline (Calypso)](https://github.com/Toys-R-Us-Rex/Duckify/pull/36). **Pourquoi ça prouve :** la PR montre une base fonctionnelle utilisée ensuite pour corriger les limites rencontrées, ce qui prouve une démarche d’implémentation progressive.
 
-# Evaluer un système informatique
-- J’ai évalué les solutions IA avec des critères visibles : qualité de rendu, stabilité d’exécution, coût/effort d’exploitation. **Preuve :** [Rapport AI Testing & Documentation](https://typst.app/project/r73B9i9BnakW76rGmJycGx). **Pourquoi ça prouve :** ce rapport associe chaque solution testée à des résultats observés et à des critères d’évaluation explicites, puis conclut en fonction de ces critères.
-- J’ai évalué précisément la variante FreeU dans MV-Adapter Text2Texture. **Preuve :** [Rapport comparatif FreeU / sans FreeU](https://typst.app/project/rSFXN1Spr2ZphkfMR5s9yk). **Pourquoi ça prouve :** la comparaison utilise une méthode claire (mêmes entrées, deux configurations) et relie les écarts de résultat à une recommandation d’usage concrète.
-- J’ai intégré les retours critiques CTO/équipe pour ajuster l’évaluation. **Preuve :** [Weekly-meeting - 06.03.2026.pdf](./data/Weekly-meeting%20-%2006.03.2026.pdf). **Pourquoi ça prouve :** les remarques listées dans ce compte-rendu sont reprises dans les choix suivants, donc la preuve montre une évaluation révisée avec feedback externe.
+- J’ai implémenté les briques techniques du pipeline (client SSH, serveur Flask, scripts SLURM sur A100) dans [PR #79 - GenAI Pipeline Integration Disco](https://github.com/Toys-R-Us-Rex/Duckify/pull/79), en appliquant de bonnes pratiques de développement et les outils adéquats (Git, API, orchestration GPU).
+- J’ai livré une première version fonctionnelle puis lancé un refactoring à partir des limites observées en conditions réelles dans [PR #36 - AI API Pipeline (Calypso)](https://github.com/Toys-R-Us-Rex/Duckify/pull/36), ce qui démontre une mise en application concrète du cycle de développement (prototypage, debug, amélioration) jusqu’à la livraison.
+
+# Évaluer un système informatique
+
+- J’ai évalué plusieurs solutions IA avec des tests ciblés et des critères explicites (qualité, stabilité, coût, effort) dans le [Rapport AI Testing & Documentation](https://typst.app/project/r73B9i9BnakW76rGmJycGx), en commentant les résultats de manière critique.
+- J’ai mené une évaluation ciblée de FreeU avec un protocole reproductible dans le [Rapport comparatif FreeU / sans FreeU](https://typst.app/project/rSFXN1Spr2ZphkfMR5s9yk), ce qui produit une base objective et pertinente pour comparer les performances.
+- J’ai ajusté la décision finale en intégrant les retours du CTO et de l’équipe dans [Weekly-meeting - 06.03.2026.pdf](./data/Weekly-meeting%20-%2006.03.2026.pdf), ce qui montre une évaluation itérative, mesurée et utile au pilotage du système.
+
+## Data Engineering
 
 # Valoriser des ensembles de données hétérogènes et multimodales
-- J’ai travaillé avec des données texte (prompts), image/rendu (textures), et métadonnées d’inférence (paramètres, seed, logs). **Preuve :** [Rapport AI Testing & Documentation](https://typst.app/project/r73B9i9BnakW76rGmJycGx). **Pourquoi ça prouve :** le document montre que les décisions sont prises en croisant le contenu des prompts, le résultat visuel et les paramètres techniques, donc il valorise bien des données hétérogènes.
-- J’ai structuré la comparaison de rendus pour tirer des conclusions pratiques. **Preuve :** [Rapport comparatif FreeU / sans FreeU](https://typst.app/project/rSFXN1Spr2ZphkfMR5s9yk). **Pourquoi ça prouve :** ce rapport compare des sorties visuelles en tenant compte des paramètres de génération, ce qui permet de transformer des tests bruts en règle de décision utilisable.
+
+- J’ai exploité conjointement prompts textuels, sorties visuelles et métadonnées d’inférence dans le [Rapport AI Testing & Documentation](https://typst.app/project/r73B9i9BnakW76rGmJycGx), ce qui montre la préparation et l’analyse de données hétérogènes issues de modalités différentes.
+- J'ai nettoyé et préparé des données multimodales (images, paramètres d'inférence, logs) en les normalisant vers une représentation commune dans le [Rapport comparatif FreeU / sans FreeU](https://typst.app/project/rSFXN1Spr2ZphkfMR5s9yk).
+- J'ai structuré les comparaisons de rendus, ce qui permet de commenter la qualité et la valeur des données produites, puis d'en tirer des recommandations opérationnelles.
 
 # Orchestrer un processus et une infrastructure de traitement de données
-- J’ai orchestré un pipeline complet local→distant avec soumission, exécution, monitoring et récupération d’artefacts. **Preuve :** [PR #79 - GenAI Pipeline Integration Disco](https://github.com/Toys-R-Us-Rex/Duckify/pull/79). **Pourquoi ça prouve :** la PR rassemble les composants qui gèrent chaque étape du flux de traitement, ce qui démontre une orchestration de bout en bout opérationnelle.
-- J’ai géré la migration d’infrastructure pour sécuriser la continuité des traitements. **Preuve :** [PR #36 - AI API Pipeline](https://github.com/Toys-R-Us-Rex/Duckify/pull/36) + [PR #79 - GenAI Pipeline Integration Disco](https://github.com/Toys-R-Us-Rex/Duckify/pull/79). **Pourquoi ça prouve :** en comparant les deux versions, on voit le passage d’un environnement qui bloque l’exécution vers une infra qui permet les traitements attendus.
+
+- J’ai orchestré un flux complet de traitement (préparation locale, soumission distante, exécution cluster, monitoring, récupération d’artefacts) dans [PR #79 - GenAI Pipeline Integration Disco](https://github.com/Toys-R-Us-Rex/Duckify/pull/79), ce qui correspond à un pipeline de bout en bout.
+- J'ai sélectionné et ajusté des méthodes d'exécution adaptées au contexte infra en migrant de Calypso vers Disco dans [PR #36 - AI API Pipeline](https://github.com/Toys-R-Us-Rex/Duckify/pull/36), afin de garantir une solution générative exécutable de manière continue.
+- J'ai produit un framework informatique pour le pipeline GenAI intégrant soumission, monitoring et récupération, ce qui fournit une solution système reconfigurable et générale dans [PR #79 - GenAI Pipeline Integration Disco](https://github.com/Toys-R-Us-Rex/Duckify/pull/79).
 
 # Appliquer les compétences de l’ingénierie en informatique au domaine des données
-- J’ai appliqué des pratiques d’ingénierie (versionnement, review, refactoring, documentation) à un pipeline IA. **Preuve :** [PR #79 - GenAI Pipeline Integration Disco](https://github.com/Toys-R-Us-Rex/Duckify/pull/79). **Pourquoi ça prouve :** les changements sont tracés, relus et améliorés dans la durée, ce qui correspond à une vraie pratique d’ingénierie appliquée aux données.
-- J’ai transformé des essais exploratoires en connaissance exploitable pour choisir la meilleure solution. **Preuve :** [Rapport AI Testing & Documentation](https://typst.app/project/r73B9i9BnakW76rGmJycGx). **Pourquoi ça prouve :** on y voit la progression depuis des essais multiples jusqu’à une décision finale argumentée, donc la preuve montre bien le passage de l’exploration à la décision technique.
+
+- J'ai appliqué au pipeline IA des standards d'ingénierie (versionnement, review, refactoring, documentation) visibles dans [PR #79 - GenAI Pipeline Integration Disco](https://github.com/Toys-R-Us-Rex/Duckify/pull/79), en construisant une boucle perception (acquisition de prompts/modèles) → traitement (inférence GPU) → décision (analyse des rendus) pour le projet robotique GenAI.
+- J’ai transformé des essais exploratoires en décisions techniques formalisées dans le [Rapport AI Testing & Documentation](https://typst.app/project/r73B9i9BnakW76rGmJycGx), ce qui montre la capacité à convertir des données multimodales en indicateurs exploitables pour la décision.
+
+## Compétences professionnelles
 
 # Communiquer clairement et efficacement
-- J’ai fait le scribe sur des réunions de coordination et des daily pour diffuser les décisions et blocages. **Preuve :** [Coordination GenAI.pdf](./data/Coordination%20GenAI.pdf) et [Daily Meetings_05.03.2026.pdf](./data/Daily%20Meetings_05.03.2026.pdf). **Pourquoi ça prouve :** ces documents centralisent les informations clés (décisions, tâches, blocages), donc ils prouvent que la communication a permis d’aligner l’équipe.
-- J’ai communiqué les avancées techniques au CTO avec retours intégrés dans la suite du travail. **Preuve :** [Weekly-meeting - 06.03.2026.pdf](./data/Weekly-meeting%20-%2006.03.2026.pdf). **Pourquoi ça prouve :** le compte-rendu montre les retours formulés et les actions décidées ensuite, donc il prouve une communication utile à la décision.
+
+- J’ai assuré un rôle de scribe sur les réunions de coordination dans [Coordination GenAI.pdf](./data/Coordination%20GenAI.pdf), en partageant des sujets variés (technique, contraintes, planification) de façon claire et orientée action.
+- J’ai documenté les daily meetings dans [Daily Meetings_05.03.2026.pdf](./data/Daily%20Meetings_05.03.2026.pdf), en choisissant un support écrit adapté pour garantir la continuité du suivi.
+- J’ai communiqué les avancées techniques au CTO dans [Weekly-meeting - 06.03.2026.pdf](./data/Weekly-meeting%20-%2006.03.2026.pdf), en adaptant le niveau de langage et la synthèse à une audience décisionnelle.
 
 # Adopter une posture professionnelle facilitante face aux situations rencontrées
-- J’ai remonté les blocages rapidement (dépendances, accès, infra) avec des propositions concrètes de résolution. **Preuve :** [Daily Meetings_05.03.2026.pdf](./data/Daily%20Meetings_05.03.2026.pdf). **Pourquoi ça prouve :** les notes relient chaque blocage à une action de suivi, ce qui démontre une posture proactive orientée solution.
-- Comme chef de semaine, j’ai aidé à garder l’équipe alignée et active (réaffectation, suivi des tâches). **Preuve :** [Daily Meetings_18.03.2026.pdf](./data/Daily%20Meetings_18.03.2026.pdf). **Pourquoi ça prouve :** le document montre des décisions de coordination prises pour maintenir l’avancement collectif, donc il prouve une posture professionnelle facilitante.
+
+- J’ai tenu compte des contraintes de l’environnement de travail en remontant rapidement les blocages (dépendances, accès, infrastructure) et en proposant des actions correctives dans [Daily Meetings_05.03.2026.pdf](./data/Daily%20Meetings_05.03.2026.pdf).
+- En tant que chef de semaine, j’ai participé de manière proactive aux réalisations techniques et maintenu la dynamique collective (réaffectation, priorisation, suivi) comme documenté dans [Daily Meetings_18.03.2026.pdf](./data/Daily%20Meetings_18.03.2026.pdf).
 
 # Argumenter ses opinions et ses choix lors de processus décisionnels et stratégiques
-- J’ai défendu le choix de solution finale avec des arguments techniques et des résultats testés. **Preuve :** [Rapport AI Testing & Documentation](https://typst.app/project/r73B9i9BnakW76rGmJycGx). **Pourquoi ça prouve :** la décision finale est reliée à des essais comparés et à des critères définis, donc l’argumentation est traçable et vérifiable.
-- J’ai argumenté le choix d’utiliser FreeU dans certains contextes MV-Adapter Text2Texture. **Preuve :** [Rapport comparatif FreeU / sans FreeU](https://typst.app/project/rSFXN1Spr2ZphkfMR5s9yk). **Pourquoi ça prouve :** les recommandations sont directement justifiées par les différences observées pendant les tests, donc le choix est défendu par des éléments concrets.
-- J’ai soutenu le pivot Calypso → Disco avec des faits d’infrastructure et d’exécution. **Preuve :** [Rapport GenAI Pipeline - Réflexion & Architecture](https://typst.app/project/r88Ho8oDHaBiIYa7MDoBL4) et [PR #79 - GenAI Pipeline Integration Disco](https://github.com/Toys-R-Us-Rex/Duckify/pull/79). **Pourquoi ça prouve :** l’analyse décrit pourquoi l’ancienne infra ne suffit pas et la PR montre la mise en place de la nouvelle, donc l’argument stratégique est appuyé par des résultats concrets.
 
-- J'ai défenu le choix de la solution finale MV-Adapter Text2Texture contre le choix de la solution MV-Adapter Image2Texture,ces conclusions ont été présentées a mes collègues lors du weekly meeting 4**Preuve :** [Rapport de comparaison T2T vs I2T](https://typst.app/project/rErsptzNiYXKS3zsnXxLcr) , [Présentation CTO Week](https://toys-r-us-rex.github.io/Duckify/presentations/20260313_duckify_meeting_week_4.pdf)
+- J’ai défendu le choix de la solution finale avec des justifications théoriques et des résultats quantitatifs/qualitatifs comparés dans le [Rapport AI Testing & Documentation](https://typst.app/project/r73B9i9BnakW76rGmJycGx).
+- J’ai argumenté l’usage de FreeU dans des contextes ciblés via le [Rapport comparatif FreeU / sans FreeU](https://typst.app/project/rSFXN1Spr2ZphkfMR5s9yk), en reliant explicitement les recommandations aux écarts mesurés.
+- J’ai soutenu le pivot Calypso vers Disco à partir d’éléments d’infrastructure et de performance dans le [Rapport GenAI Pipeline - Réflexion & Architecture](https://typst.app/project/r88Ho8oDHaBiIYa7MDoBL4) et [PR #79 - GenAI Pipeline Integration Disco](https://github.com/Toys-R-Us-Rex/Duckify/pull/79), puis débattu ce choix de manière argumentée avec l’équipe.
+- J’ai défendu le choix de MV-Adapter Text2Texture face à MV-Adapter Image2Texture avec le [Rapport de comparaison T2T vs I2T](https://typst.app/project/rErsptzNiYXKS3zsnXxLcr), puis je l’ai présenté à l’équipe dans [Présentation CTO Week](https://toys-r-us-rex.github.io/Duckify/presentations/20260313_duckify_meeting_week_4.pdf).
 
 # Critiquer le déroulement d’une production de manière auto-réflexive
-- J’ai identifié mes points forts (progression SLURM, structuration pipeline) et mes limites (coût du refactoring, dépendances lourdes). **Preuve :** [Weekly-meeting - 06.03.2026.pdf](./data/Weekly-meeting%20-%2006.03.2026.pdf). **Pourquoi ça prouve :** ce compte-rendu contient une critique explicite du travail réalisé, donc il montre une analyse lucide de ce qui fonctionne et de ce qui doit être amélioré.
-- J’ai ajusté ma stratégie après retour terrain, au lieu de rester bloqué sur la première solution. **Preuve :** [PR #36 - AI API Pipeline](https://github.com/Toys-R-Us-Rex/Duckify/pull/36) puis [PR #79 - GenAI Pipeline Integration Disco](https://github.com/Toys-R-Us-Rex/Duckify/pull/79). **Pourquoi ça prouve :** le passage d’une première implémentation à une version refactorisée prouve que j’ai utilisé le retour d’expérience pour corriger la trajectoire.
+
+- J’ai pris du recul sur ma production dans [Weekly-meeting - 06.03.2026.pdf](./data/Weekly-meeting%20-%2006.03.2026.pdf), en explicitant mes chemins de réflexion, mes décisions, ainsi que leurs limites.
+- J’ai jugé a posteriori la justesse des choix réalisés et ajusté la trajectoire en faisant évoluer l’implémentation de [PR #36 - AI API Pipeline](https://github.com/Toys-R-Us-Rex/Duckify/pull/36) vers [PR #79 - GenAI Pipeline Integration Disco](https://github.com/Toys-R-Us-Rex/Duckify/pull/79), ce qui correspond à une auto-critique argumentée avec alternatives motivées.
