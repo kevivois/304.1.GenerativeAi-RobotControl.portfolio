@@ -24,7 +24,6 @@
 - J'ai évalué de façon ciblée l'effet de FreeU avec métriques quantitatives -> [Rapport comparatif FreeU / sans FreeU](https://typst.app/project/rSFXN1Spr2ZphkfMR5s9yk)
 - J'ai évalué plusieurs configurations d'hyperparamètres Text2Texture (guidance scale, steps) sur 80 générations pour mesurer leur impact sur la qualité perçue -> [Optimisation des Hyperparamètres pour la Génération de Textures 3D](https://typst.app/project/rIZH0bul1eBFVShFEzuLWc)
 - J'ai intégré une évaluation automatisée multi-générations (OpenCLIP + NIMA + ranking) pour comparer les sorties de manière systématique -> [PR #6 - MV-Adapter](https://github.com/Toys-R-Us-Rex/MV-Adapter/pull/6) + [PR #115 - Duckify](https://github.com/Toys-R-Us-Rex/Duckify/pull/115)
-- J'ai ajusté les décisions techniques selon les résultats observés et les retours du CTO/équipe -> [Weekly-meeting - 06.03.2026.pdf](./data/Weekly-meeting%20-%2006.03.2026.pdf)
 
 ## Valoriser des ensembles de données hétérogènes et multimodales
 
@@ -45,7 +44,7 @@
 ## Communiquer clairement et efficacement
 
 - J'ai produit des documents techniques structurés pour communiquer analyses, protocoles et recommandations -> [Rapport GenAI Pipeline - Réflexion & Architecture](https://typst.app/project/r88Ho8oDHaBiIYa7MDoBL4)
-- J'ai restitué les résultats et choix techniques au CTO/équipe en format présentation -> [Présentation CTO Week](https://toys-r-us-rex.github.io/Duckify/presentations/20260313_duckify_meeting_week_4.pdf)
+- Durant chaque présentation hébdomadaire avec le CTO & PO , j'ai pu présenter mes avancées, choix et blocages à mes collègues [Présentation semaine 4 - Slides 3-4 , 14 à 21 ](https://toys-r-us-rex.github.io/Duckify/presentations/20260313_duckify_meeting_week_4.pdf) + [Présentation semaine 5 - Slides 3 , 8 ](https://toys-r-us-rex.github.io/Duckify/presentations/20260320_duckify_meeting_week_5.pdf) + [Présentation semaine 6 , Slides 3, 9 à 12](https://toys-r-us-rex.github.io/Duckify/presentations/20260327_duckify_meeting_week_6.pdf)
 - J'ai amélioré la qualité de mes comptes-rendus de scribing entre mes deux premiers daily ([05.03.2026](https://toys-r-us-rex.github.io/Duckify/meetings/daily/2026-03-05.pdf), [13.03.2026](https://toys-r-us-rex.github.io/Duckify/meetings/daily/2026-03-13.pdf)) et mes deux derniers ([18.03.2026](https://toys-r-us-rex.github.io/Duckify/meetings/daily/2026-03-18.pdf), [31.03.2026](https://toys-r-us-rex.github.io/Duckify/meetings/daily/2026-03-31.pdf)), avec une rédaction plus structurée des bloquants, des solutions et de la redistribution des tâches.
 
 ## Adopter une posture professionnelle facilitante face aux situations rencontrées
