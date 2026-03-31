@@ -50,6 +50,7 @@
 ## Adopter une posture professionnelle facilitante face aux situations rencontrées
 
 - Désigné chef de semaine, j'ai pris le lead opérationnel en réaffectant les tâches pour garantir une charge de travail équilibrée et m'assurer que chaque membre dispose d'objectifs clairs -> [Weekly meeting 13.03.2026](https://toys-r-us-rex.github.io/Duckify/meetings/weekly/2026-03-13.pdf) + [Daily meeting 18.03.2026](https://toys-r-us-rex.github.io/Duckify/meetings/daily/2026-03-18.pdf) + [Daily meeting 20.03.2026](https://toys-r-us-rex.github.io/Duckify/meetings/daily/2026-03-20.pdf)
+JJ’ai pris le lead lors de la présentation au CTO de la semaine 5 et piloté la définition du milestone de la semaine suivante, validé collectivement avec l’équipe -> [Présentation ceo week 5](https://toys-r-us-rex.github.io/Duckify/presentations/20260320_duckify_meeting_week_5.pdf)
 - J'ai collaboré avec un collègue GenAI pour intégrer ses scripts d'évaluation dans la pipeline, en m'appuyant sur son transfert de connaissance pour fiabiliser l'intégration -> [PR #6 - MV-Adapter](https://github.com/Toys-R-Us-Rex/MV-Adapter/pull/6) + [PR #115 - Duckify](https://github.com/Toys-R-Us-Rex/Duckify/pull/115)
 
 ## Argumenter ses opinions et ses choix lors de processus décisionnels et stratégiques
