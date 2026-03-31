@@ -1,4 +1,4 @@
-﻿# Compétences
+﻿# Portfolio Compétences Kevin Voisin : Duckify
 
 
 ## Analyser un problème informatique complexe
@@ -63,3 +63,6 @@
 
 ## Critiquer le déroulement d'une production de manière auto-réflexive
 
+- J'ai exercé une auto-critique régulière de l'avancement du projet lors des présentations hebdomadaires au CTO/PO, en identifiant les écarts entre objectifs et résultats -> [Présentation CEO week 2 - Slide 6](https://toys-r-us-rex.github.io/Duckify/presentations/20260227_duckify_meeting_week_2.pdf) + [Présentation CEO week 3 - Slide 10](https://toys-r-us-rex.github.io/Duckify/presentations/20260306_duckify_meeting_week_3.pdf)
+
+- J'ai explicité les causes du non-achèvement complet des milestones de la semaine 4 et formulé des ajustements pour la suite -> [Présentation week 4 - Slide 4](https://toys-r-us-rex.github.io/Duckify/presentations/20260313_duckify_meeting_week_4.pdf) + [Présentation week 5 - Slide 3](https://toys-r-us-rex.github.io/Duckify/presentations/20260320_duckify_meeting_week_5.pdf)
